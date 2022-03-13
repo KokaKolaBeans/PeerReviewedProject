@@ -1,3 +1,5 @@
+# As a quick note at the outset, I was unable to really figure out how to incorporate a function into my program. I'm using the zsh shell, which appears to have a process for creating commands that is different than that outlined in the textbook. If you have any feedback on that, it would be greatly appreciated.
+
 files=$(ls|wc -w)
 echo "How many files are in the current directory?"
 read response
