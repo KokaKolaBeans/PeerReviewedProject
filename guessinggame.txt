@@ -1,0 +1,20 @@
+files=$(ls|wc -w)
+echo "How many files are in the current directory?"
+read response
+if [[ $response -ne $files ]]
+then
+   while [[ $response -ne $files ]]
+   do
+      if [[ $response -lt $files ]]
+      then
+         echo "Incorrect! Your guess was too low. Try again!"
+         read response
+      else
+         echo "Incorrect! Your guess as too high. Try again!"
+         read response
+      fi
+  done
+else
+   echo "Correct, you win!"
+   echo "See you later!"
+fi
